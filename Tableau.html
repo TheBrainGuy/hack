@@ -3,8 +3,14 @@
 <meta charset="utf-8">
 <title>Tableau Test</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap-select.min.css" rel="stylesheet">
+	
 <script type="text/javascript" src="http://tableau/javascripts/api/tableau_v8.js"></script>
 <script type="text/javascript">
+
+
+
 
 
 function selectViz() {
@@ -16,7 +22,8 @@ function selectViz() {
 
 function initializeViz(wbTagQuote){
     var placeholderDiv = document.getElementById("tableauViz");
-    var url = wbTagQuote;
+    var url = "https://public.tableau.com/views/HackTrial/Sheet1?:embed=y&:display_count=yes";
+	//var url = wbTagQuote;
     var options = {
         width: placeholderDiv.offsetWidth,
         height: placeholderDiv.offsetHeight,
@@ -32,7 +39,7 @@ function initializeViz(wbTagQuote){
 </script>
     <script src="js/bootstrap.min.js"></script>
 	
-	<script>
+<!-- 	<script>
 	var element, url, option, workbook,viz;
 	
 	/*Viz Construction & Argus */
@@ -43,14 +50,14 @@ function initializeViz(wbTagQuote){
 		width: "600px",
 		height: "400px",
 		
-		onFIrstInteractive: function (vizEvent) {
+		onFirstInteractive: function (vizEvent) {
 			workbook = vizEvent.getViz().getWorkbook();
 		}
 	};
 	
 	viz = tableauSoftware.Viz(element, url, options);
 	
-	</script>
+	</script> -->
 </head>
 
 <body>
@@ -59,7 +66,7 @@ function initializeViz(wbTagQuote){
 
 
 
-
+<!-- 
 <div class="col-lg-12">
     <div class="row">
         <div class="col-xs-4">
@@ -77,7 +84,7 @@ function initializeViz(wbTagQuote){
 	<div class="row" id="vizArea">
 	</div>
 </div>
-	
+	 -->
 
 	
 <!-- Dropdown Menu, the value corresponds with those found in the "name" parameter in the tableau view code 
@@ -86,8 +93,59 @@ function initializeViz(wbTagQuote){
         <option value="https://public.tableau.com/profile/publish/HackTrial/Sheet1#!/publish-confirm">view_0</option>
         <option value="view_1&#47;view_1">view_1</option>
     </select> -->
+	
+	
 <!-- Tableau view goes here -->
     <div id="tableauViz" style="height:1200px; width:1200px"\"></div>
+	
+	
+	<div class='tableauPlaceholder' id='viz1474628197744' style='position: relative'>
+	<noscript>
+	<a href=''>
+	<img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HackTrial&#47;Sheet1&#47;1_rss.png' style='border: none' />
+	</a>
+	</noscript>
+	<object class='tableauViz'  style='display:none;'>
+	<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+	<param name='site_root' value='' />
+	<param name='name' value='HackTrial&#47;Sheet1' />
+	<param name='tabs' value='no' />
+	<param name='toolbar' value='yes' />
+	<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HackTrial&#47;Sheet1&#47;1.png' /> 
+	<param name='animate_transition' value='yes' />
+	<param name='display_static_image' value='yes' />
+	<param name='display_spinner' value='yes' />
+	<param name='display_overlay' value='yes' />
+	<param name='display_count' value='yes' />
+	</object>
+	</div> 
+	
+	<script type='text/javascript'>     
+	var divElement = document.getElementById('viz1474628197744');      
+	var vizElement = divElement.getElementsByTagName('object')[0];     
+	vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';      
+	var scriptElement = document.createElement('script');         
+	scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';     
+	vizElement.parentNode.insertBefore(scriptElement, vizElement);           
+	</script>
+	
+	
+
+	
 </form>
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+	<script src="js/bootstrap-typeahead.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	
+	
+	
+	
 </body>
 </html>
