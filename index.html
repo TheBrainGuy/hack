@@ -21,7 +21,7 @@
   </head>
   <body>
 
-    <div class="container-fluid centerBlock">
+    <div class="container-fluid center-block">
 	<div class="row">
 		<div class="col-md-12">
 			<nav class="navbar navbar-default" role="navigation">
@@ -30,16 +30,16 @@
 					 
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button> <a class="navbar-brand" href="#">Hack Team 23</a>
+					</button> <a class="navbar-brand" href="index.html">Hack Team 23</a>
 				</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="active">
-							<a href="#index.html">HOME</a>
+							<a href="index.html">HOME</a>
 						</li>
 						<li>
-							<a href="tableau.html">Tableau</a>
+							<a href="Tableau.html">Tableau</a>
 						</li>
 						<li class="dropdown">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Stuffs<strong class="caret"></strong></a>
@@ -179,22 +179,20 @@
 					<span class="badge">1	</span>Want more?
 				</div> <a class="list-group-item active"><span class="badge">1</span>Get more</a>
 			</div>
+		</div>
 			
-			<div class="col-md-6">
+	<div class="col-md-6">
+	<div class="form-area"> 
 		<form role="form">	
 		<fieldset>
 		<legend>Find the best job for you</legend>
 
 					
-					<!-- TABLEAU -->
-					<div>
-					<a href="MadMoneyScraper.html">Click Here To Change Your Future</a>
-					</div>
 
-					  <div class="well">
-						<input id="demo1" class="form-control" type="text" autocomplete="off" placeholder="Search jobs...">
-						<ul class="typeahead dropdown-menu"></ul>
-					</div>					
+				<div class="well">
+					<input id="demo1" class="form-control" type="text" autocomplete="off" placeholder="Search jobs...">
+					<ul class="typeahead dropdown-menu"></ul>
+				</div>					
 					
 				
 				<div class="form-group">
@@ -211,27 +209,19 @@
 						File input
 					</label>
 					<input id="exampleInputFile" type="file">
-					<p class="help-block">
-						block-level help text here.
-					</p>
 				</div>
-				<div class="checkbox">
-					 
-					<label>
-						<input type="checkbox"> Check me out
-					</label>
-				</div> 
+
 				<button type="submit" class="btn btn-primary">
 					Submit
 				</button>
 				</fieldset>
 			</form>
 		</div>
-	</div>
+		</div>
 	
 	
 
-	<div class="col-md-6 text-center">
+	<div class="col-md-6 center-block">
     <div class="form-area">  
         <form role="form">
         <br style="clear:both">
@@ -260,9 +250,9 @@
         </form>
     </div>
 	</div>
-	</div>
 	
-	<div class="row">
+	
+	<div class="row center-block">
 		<div class="col-md-12">
 			<ul class="pagination pagination-lg">
 				<li>
@@ -275,20 +265,24 @@
 					<a href="#">2</a>
 				</li>
 				<li>
-					<a href="#">3</a>
-				</li>
-				<li>
-					<a href="#">4</a>
-				</li>
-				<li>
-					<a href="#">5</a>
-				</li>
-				<li>
 					<a href="#">Next</a>
 				</li>
 			</ul>
 		</div>
 	</div>	
+</div>
+
+
+			<!-- TABLEAU -->
+			<div>
+			<a href="MadMoneyScraper.html">Click Here To Change Your Future</a>
+			</div>
+
+
+
+
+
+
 </div>
 
     <script src="js/jquery.min.js"></script>
@@ -300,6 +294,7 @@
 	<!--Remove if problem-->
 	<script src="js/psn.js"></script>
 	
+	<script>
     $('#demo1').typeahead({
         source: [
             { id: 1, name: 'Software Engineer' },
